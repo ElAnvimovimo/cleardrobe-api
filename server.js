@@ -29,6 +29,6 @@ app.use('/api/clothes', clothingRoutes)
 app.use('/api/outfits', outfitRoutes)
 app.use('/api/calendar', calendarRoutes)
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, '0.0.0.0', () => {
   console.log(`Servidor en puerto ${process.env.PORT}`)
 })
